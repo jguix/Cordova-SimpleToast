@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	id="cordova-plugin-simpletoast"
+	version="0.2.11">
+	<name>SimpleToast</name>
+	<description>A sample Cordova plugin providing access to Toast messages</description>
+	<license>Apache 2.0</license>
+	<keywords>cordova,toast</keywords>
+	<repo></repo>
+	<issue></issue>
+
+	<js-module src="www/SimpleToast.js" name="SimpleToast">
+		<clobbers target="SimpleToast" />
+	</js-module>
+
+	<!-- android -->
+	<platform name="android">
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="SimpleToast" >
+				<param name="android-package" value="com.jguix.cordova.SimpleToast"/>
+			</feature>
+		</config-file>
+		<source-file src="src/android/SimpleToast.java" target-dir="src/com/jguix/cordova" />
+	</platform>
+</plugin>

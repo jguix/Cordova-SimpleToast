@@ -1,0 +1,18 @@
+{
+    "version": "0.1",
+    "name": "cordova-plugin-simpletoast",
+    "cordova_name": "SimpleToast",
+    "description": "A sample Cordova plugin providing access to Toast messages",
+    "license": "Apache 2.0",
+    "repo": "",
+    "issue": "",
+    "keywords": [
+        "cordova",
+        "toast"
+    ],
+    "platforms": [
+        "android",
+    ],
+    "engines": [],
+    "englishdoc": ""
+}
